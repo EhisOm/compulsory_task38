@@ -27,11 +27,12 @@ nlp = spacy.load("en_core_web_sm")
 print("My example!")
 print("\nCHECKING SIMILARITY OF THINGS!\n")
 
+# Naming the things to check
 str_1 = nlp("man")
 str_2 = nlp("car")
 wstr_3 = nlp("Lion")
 
-# print(f"\n{word1} & {word2} got: {word1.similarity(word2)}00% similarity!")
+# Returning the similarity
 print("\n")
 print(str_1.similarity(str_2))
 print(wstr_3.similarity(str_2))
